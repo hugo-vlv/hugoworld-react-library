@@ -1,3 +1,5 @@
+name: Github Pages
+
 on:
   push:
     branches: [$default-branch]
@@ -22,24 +24,18 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2
-        with:
-          version: 8
-          run_install: false
-
       - name: Set up Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version-file: ".nvmrc"
-          cache: pnpm
+          cache: yarn
           registry-url: https://registry.npmjs.org
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: yarn install --frozen-lockfile
 
       - name: Build storybook
-        run: pnpm run build-storybook
+        run: yarn build-storybook
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
