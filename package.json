@@ -1,7 +1,8 @@
 {
   "name": "hugoworld-react-library",
   "private": false,
-  "version": "0.1.0",
+  "version": "0.2.0",
+  "license": "MIT",
   "type": "module",
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
@@ -17,13 +18,24 @@
     "build": "tsc --p ./tsconfig.build.json && vite build",
     "lint:js": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "lint:css": "stylelint \"**/*.css\"",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "storybook": "BROWSER=none storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@chromatic-com/storybook": "^1.5.0",
+    "@storybook/addon-essentials": "^8.1.9",
+    "@storybook/addon-interactions": "^8.1.9",
+    "@storybook/addon-links": "^8.1.9",
+    "@storybook/addon-onboarding": "^8.1.9",
+    "@storybook/blocks": "^8.1.9",
+    "@storybook/react": "^8.1.9",
+    "@storybook/react-vite": "^8.1.9",
+    "@storybook/test": "^8.1.9",
     "@types/node": "^20.14.2",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
@@ -38,9 +50,11 @@
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
     "eslint-plugin-react-refresh": "^0.4.6",
+    "eslint-plugin-storybook": "^0.8.0",
     "glob": "^10.4.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "storybook": "^8.1.9",
     "stylelint": "^16.6.1",
     "stylelint-config-standard": "^36.0.0",
     "typescript": "^5.2.2",
