@@ -14,13 +14,11 @@
   ],
   "prepublishOnly": "npm run build",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc --p ./tsconfig.build.json && vite build",
+    "dev": "BROWSER=none storybook dev -p 6006",
     "lint:js": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "lint:css": "stylelint \"**/*.css\"",
-    "preview": "vite preview",
-    "storybook": "BROWSER=none storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build": "tsc --p ./tsconfig.build.json && vite build",
+    "build:storybook": "storybook build"
   },
   "peerDependencies": {
     "react": "^18.2.0",
