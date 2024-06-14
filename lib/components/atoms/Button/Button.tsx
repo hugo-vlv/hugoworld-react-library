@@ -9,9 +9,18 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 export default function Button(props: ButtonProps) {
-  const { type, className, label, children, ...rest } = props;
+  const {
+    type, className, label, children, ...rest
+  } = props;
 
-  return <button type={type} className={`${className || ''} ${styles.button} ${styles.gradient}`} {...rest}>
-    {label || children}
-  </button>;
+  return (
+    <button type={type} className={`${className || ''} ${styles.button} ${styles.gradient}`} {...rest}>
+      {label || children}
+    </button>
+  );
 }
+
+Button.defaultProps = {
+  className: '',
+  label: '',
+};

@@ -22,7 +22,8 @@
     "dist",
     ".eslintrc.cjs",
     "vite.config.ts",
-    "stylelint.config.ts"
+    "stylelint.config.ts",
+    "storybook-static"
   ],
   "plugins": [
     "react-refresh"
@@ -37,6 +38,16 @@
     "react/react-in-jsx-scope": "off",
     "react/jsx-props-no-spreading": "off",
     "react/button-has-type": "off",
-    "import/prefer-default-export": "off"
+    "import/prefer-default-export": "off",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "**/*.stories.*",
+          "**/.storybook/**/*.*"
+        ],
+        "peerDependencies": true
+      }
+    ]
   }
 }
