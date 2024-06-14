@@ -6,8 +6,7 @@ on:
       - '**'
 
 jobs:
-
-  build:
+  quality:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -25,7 +24,7 @@ jobs:
 
       - name: Run lint:js
         run: yarn lint:js
-      
+
       - name: Run lint:css
         run: yarn lint:css
         
