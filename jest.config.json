@@ -1,0 +1,33 @@
+{
+  "preset": "ts-jest",
+  "testEnvironment": "jsdom",
+  "transform": {
+    "^.+\\.tsx?$": "ts-jest",
+    "^.+\\.jsx?$": "babel-jest"
+  },
+  "moduleFileExtensions": [
+    "ts",
+    "tsx",
+    "js",
+    "jsx",
+    "json",
+    "node"
+  ],
+  "transformIgnorePatterns": [
+    "/node_modules/"
+  ],
+  "moduleDirectories": [
+    "node_modules",
+    "utils",
+    "lib",
+    "__dirname"
+  ],
+  "moduleNameMapper": {
+    "\\.(css|less|scss|sass)$": "identity-obj-proxy",
+    "^@utils/(.*)$": "<rootDir>/utils/$1",
+    "^@atoms/(.*)$": "<rootDir>/lib/components/atoms/$1",
+    "^@molecules/(.*)$": "<rootDir>/lib/components/molecules/$1",
+    "^@organisms/(.*)$": "<rootDir>/lib/components/organisms/$1",
+    "^@templates/(.*)$": "<rootDir>/lib/components/templates/$1"
+  }
+}

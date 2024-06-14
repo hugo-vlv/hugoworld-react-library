@@ -3,6 +3,7 @@
     "strict": true,
     "target": "ES2020",
     "useDefineForClassFields": true,
+    "esModuleInterop": true,
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "skipLibCheck": true,
@@ -11,6 +12,8 @@
       "@atoms/*": ["lib/components/atoms/*"],
       "@molecules/*": ["lib/components/molecules/*"],
       "@organisms/*": ["lib/components/organisms/*"],
+      "@templates/*": ["lib/components/templates/*"],
+      "@utils/*": ["utils/*"],
     },
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
@@ -22,6 +25,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src", "lib"],
+  "include": ["src", "lib", "utils"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

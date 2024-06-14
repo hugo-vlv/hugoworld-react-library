@@ -19,6 +19,8 @@ export default defineConfig({
       '@atoms': resolve(__dirname, 'lib/components/atoms'),
       '@molecules': resolve(__dirname, 'lib/components/molecules'),
       '@organisms': resolve(__dirname, 'lib/components/organisms'),
+      '@templates': resolve(__dirname, 'lib/components/templates'),
+      '@utils': resolve(__dirname, 'utils'),
     },
   },
   build: {

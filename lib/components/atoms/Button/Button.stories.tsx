@@ -22,23 +22,14 @@ export const Primary: Story = {
   },
 };
 
-export const Secondary: Story = {
+export const Children: Story = {
   args: {
     type: 'button',
-    label: 'Button',
-  },
-};
-
-export const Large: Story = {
-  args: {
-    type: 'button',
-    label: 'Button',
-  },
-};
-
-export const Small: Story = {
-  args: {
-    type: 'button',
-    label: 'Button',
+    children: (
+      <span id="box1" className="eventContainer">
+        <h3>CLICK ON ME!</h3>
+        <p>Description</p>
+      </span>
+    ),
   },
 };

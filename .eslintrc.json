@@ -20,9 +20,8 @@
   },
   "ignorePatterns": [
     "dist",
-    ".eslintrc.cjs",
+    "coverage",
     "vite.config.ts",
-    "stylelint.config.ts",
     "storybook-static"
   ],
   "plugins": [
@@ -39,12 +38,22 @@
     "react/jsx-props-no-spreading": "off",
     "react/button-has-type": "off",
     "import/prefer-default-export": "off",
+    "react/function-component-definition": [
+      "error",
+      {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
+      }
+    ],
+    "react/require-default-props": "off",
     "import/no-extraneous-dependencies": [
       "error",
       {
         "devDependencies": [
           "**/*.stories.*",
-          "**/.storybook/**/*.*"
+          "**/.storybook/**/*.*",
+          "**/*.test.*",
+          "/utils/**/*.*"
         ],
         "peerDependencies": true
       }

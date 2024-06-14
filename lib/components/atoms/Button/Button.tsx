@@ -8,7 +8,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   label?: string;
 }
 
-export default function Button(props: ButtonProps) {
+const Button: React.FC<ButtonProps> = (props) => {
   const {
     type, className, label, children, ...rest
   } = props;
@@ -18,9 +18,6 @@ export default function Button(props: ButtonProps) {
       {label || children}
     </button>
   );
-}
-
-Button.defaultProps = {
-  className: '',
-  label: '',
 };
+
+export default Button;
