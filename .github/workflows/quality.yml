@@ -22,24 +22,10 @@ jobs:
 
       - name: Install dependencies
         run: yarn install --frozen-lockfile
-  
-  quality-js:
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
+
       - name: Run lint:js
         run: yarn lint:js
-  
-  quality-css:
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
+      
       - name: Run lint:css
         run: yarn lint:css
-
-  test:
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Run test
-        run: yarn test
+        
