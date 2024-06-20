@@ -1,0 +1,36 @@
+import { Meta, Title, Subtitle, ColorPalette, ColorItem } from '@storybook/blocks';
+
+<Meta title="Colors" />
+
+<Title>Colors</Title>
+
+<Subtitle>
+  In this project, we use a carefully selected color palette to ensure consistent and visually appealing color styles throughout the application.
+</Subtitle>
+
+<ColorPalette>
+  <ColorItem 
+    title="Primary" 
+    subtitle="Purple" 
+    colors={{ Purple: 'var(--color-primary)' }} 
+  />
+  <ColorItem 
+    title="Secondary" 
+    subtitle="Yellow" 
+    colors={{ Yellow: 'var(--color-secondary)' }} 
+  />
+  <ColorItem
+    title="Accent"
+    subtitle="Accent colors"
+    colors={{
+      Info: 'var(--color-info)',
+      Success: 'var(--color-success)',
+      Warning: 'var(--color-warning)',
+      Danger: 'var(--color-danger)'
+    }}
+  />
+  <ColorItem
+    title="Greys"
+    colors={{ Black: 'var(--color-black)', White: 'var(--color-white)' }}
+  />
+</ColorPalette>

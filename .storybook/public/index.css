@@ -1,0 +1,13 @@
+body {
+    font-family: var(--font-family);
+}
+
+.docblock-typeset.sb-unstyled,
+.sbdocs-preview.sb-unstyled {
+    background-color: white;
+    border: transparent;
+}
+
+.docblock-typeset.sb-unstyled > div > div:first-child {
+    color: black;
+}

@@ -1,0 +1,65 @@
+import { Meta, Title, Subtitle, Typeset } from '@storybook/blocks';
+
+<Meta title="Typography" />
+
+export const typography = {
+  type: {
+    primary: 'var(--font-family)',
+  },
+  weight: {
+    regular: '400',
+    bold: '600',
+  },
+  size: {
+    p3: 14,
+    p2: 16,
+    p1: 20,
+    h3: 24,
+    h2: 32,
+    h1: 40,
+  },
+};
+
+export const SampleText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.';
+
+<Title>Typography</Title>
+
+<Subtitle>
+  In this project, we use a carefully selected typography system to ensure consistent and visually appealing text styles throughout the application.
+</Subtitle>
+
+**Font:** Josefin Sans
+
+**Weight:** 400(regular)
+
+<Typeset
+  fontSizes={[
+    Number(typography.size.p3),
+    Number(typography.size.p2),
+    Number(typography.size.p1),
+    Number(typography.size.h3),
+    Number(typography.size.h2),
+    Number(typography.size.h1),
+  ]}
+  fontWeight={typography.weight.regular}
+  sampleText={SampleText}
+  fontFamily={typography.type.primary}
+/>
+
+**Font:** Josefin Sans
+
+**Weight:** 600(bold)
+
+<Typeset
+  fontSizes={[
+    Number(typography.size.p3),
+    Number(typography.size.p2),
+    Number(typography.size.p1),
+    Number(typography.size.h3),
+    Number(typography.size.h2),
+    Number(typography.size.h1),
+  ]}
+  fontWeight={typography.weight.bold}
+  sampleText={SampleText}
+  fontFamily={typography.type.primary}
+/>

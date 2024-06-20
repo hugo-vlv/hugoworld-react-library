@@ -24,10 +24,12 @@
   ],
   "moduleNameMapper": {
     "\\.(css|less|scss|sass)$": "identity-obj-proxy",
-    "^@utils/(.*)$": "<rootDir>/utils/$1",
     "^@atoms/(.*)$": "<rootDir>/lib/components/atoms/$1",
     "^@molecules/(.*)$": "<rootDir>/lib/components/molecules/$1",
     "^@organisms/(.*)$": "<rootDir>/lib/components/organisms/$1",
-    "^@templates/(.*)$": "<rootDir>/lib/components/templates/$1"
+    "^@templates/(.*)$": "<rootDir>/lib/components/templates/$1",
+    "^@assets/(.*)$": "<rootDir>/lib/assets/$1",
+    "^@utils/(.*)$": "<rootDir>/utils/$1",
+    "^@styles/(.*)$": "<rootDir>/styles/$1"
   }
 }

@@ -1,0 +1,49 @@
+:root {
+    /* Sizes (in rem) */
+    --size-small: .5;
+    --size-medium: 1;
+    --size-large: 1.5;
+
+    /* Typography */
+    --paragraph-03: .875rem;
+    --paragraph-02: 1rem;
+    --paragraph-01: 1.25rem;
+    --heading-03: 1.5rem;
+    --heading-02: 2rem;
+    --heading-01: 2.5rem;
+    
+    /* Colors */
+    --color-primary: #9673fa;
+    --color-secondary: #fac84b;
+    --color-info: #17a2b8;
+    --color-success: #28a745;
+    --color-danger: #dc3545;
+    --color-warning: #fac84b;
+    --color-black: black;
+    --color-white: white;
+
+    /* Fonts */;
+    --font-family: "Josefin Sans", sans-serif;
+    --font-size: calc(var(--size-medium) * 1rem);
+    --font-color: #333;
+    
+    /* Spacing */
+    --padding-small: calc(var(--size-small) * 1rem);
+    --padding-medium: calc(var(--size-medium) * 1rem);
+    --padding-large: calc(var(--size-large) * 1rem);
+    --margin-small: calc(var(--size-small) * 1rem);
+    --margin-medium: calc(var(--size-medium) * 1rem);
+    --margin-large: calc(var(--size-large) * 1rem);
+    
+    /* Border */
+    --border-radius: .3125rem;
+    --border-width: .0625rem;
+    --border-color: #ccc;
+        
+    /* Box Shadow */
+    --box-shadow: 0 .125rem .25rem rgb(0 0 0 0.1);
+    
+    /* Transitions */
+    --transition-duration: 0.3s;
+    --transition-easing: ease-in-out;
+}

@@ -8,7 +8,7 @@ const meta = {
   parameters: {
     layout: 'centered',
   },
-  tags: ['autodocs'],
+  // tags: ['autodocs'],
   args: { onClick: fn() },
 } satisfies Meta<typeof Button>;
 
@@ -27,7 +27,7 @@ export const Children: Story = {
     type: 'button',
     children: (
       <span id="box1" className="eventContainer">
-        <h3>CLICK ON ME!</h3>
+        <h3 style={{ fontSize: '4rem' }}>CLICK ON ME!</h3>
         <p>Description</p>
       </span>
     ),

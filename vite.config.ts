@@ -20,7 +20,9 @@ export default defineConfig({
       '@molecules': resolve(__dirname, 'lib/components/molecules'),
       '@organisms': resolve(__dirname, 'lib/components/organisms'),
       '@templates': resolve(__dirname, 'lib/components/templates'),
+      '@assets': resolve(__dirname, 'lib/assets'),
       '@utils': resolve(__dirname, 'utils'),
+      '@styles': resolve(__dirname, 'lib/styles'),
     },
   },
   build: {
@@ -33,7 +35,7 @@ export default defineConfig({
       external: ['react', 'react/jsx-runtime'],
       input: Object.fromEntries(
         glob.sync('lib/**/*.{ts,tsx}', {
-          ignore: ["lib/**/*.d.ts"],
+          ignore: ["lib/**/*.d.ts", "lib/**/*.stories.tsx", "lib/**/*.test.tsx"],
         }).map(file => [
           relative(
             'lib',
