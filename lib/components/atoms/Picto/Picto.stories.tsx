@@ -29,12 +29,3 @@ export const Large: Story = {
     width: 150,
   },
 };
-
-export const Colored: Story = {
-  args: {
-    name: 'beer',
-    height: 50,
-    width: 50,
-    color: 'red',
-  },
-};

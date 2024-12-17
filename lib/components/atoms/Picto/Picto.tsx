@@ -4,7 +4,7 @@ import Beer from '@assets/icons/beer.svg';
 
 import styles from './Picto.module.css';
 
-type PictoProps = {
+export type PictoProps = {
   name: string;
   height: number;
   width: number;
